@@ -1,0 +1,10 @@
+targets:
+  $default:
+    sources:
+      - $package$
+      - lib/**
+      - pubspec.yaml
+    builders:
+      build_runner:
+        generate_for:
+          - new_module/*.dart
